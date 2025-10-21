@@ -1,0 +1,15 @@
+[package]
+name = "grep-matcher"
+version = "0.1.0"
+edition = "2024"
+authors = ["boyan <yowhyz@gmail.com>"]
+license = "UNLICENSE OR MIT"
+
+# 运行时需要的库
+[dependencies]
+memchr = "2.6.3"
+
+
+# 仅在测试时需要的库
+[dev-dependencies]
+regex = "1.9.5"

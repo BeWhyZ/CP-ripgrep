@@ -2,5 +2,21 @@
 name = "cp-ripgrep"
 version = "0.1.0"
 edition = "2024"
+authors = ["boyan <yowhyz@gmail.com>"]
+license = "UNLICENSE OR MIT"
+
+[workspace]
+members = ["crates/matcher"]
 
 [dependencies]
+anyhow = "1.0.75"
+bstr = "1.7.0"
+lexopt = "0.3.0"
+log = "0.4.5"
+serde_json = "1.0.23"
+termcolor = "1.1.0"
+textwrap = { version = "0.16.0", default-features = false }
+
+[[bin]]
+path = "crates/core/main.rs"
+name = "rg"
